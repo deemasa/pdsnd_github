@@ -13,8 +13,8 @@ most frequent combination of start station and end station trip. Program will di
 counts of gender, earliest, most recent and most common year of birth.
 
 ### Files used
-Include the files used
+CSV files are used for data.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+[All credits to udacity repository](https://github.com/udacity/pdsnd_github)
 
