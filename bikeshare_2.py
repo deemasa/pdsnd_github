@@ -147,7 +147,7 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
-
+    # displaying the message of calculating trip duration
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -200,10 +200,10 @@ def user_stats(df):
 
 def display_data(df):
     """Displays raw bikeshare data."""
-    # Would you like to view individual trip data (5 entries)? Type 'yes' or 'no'\n"
+    # Would you like to view individual trip data (five entries)? Type 'yes' or 'no'\n"
     i = 0
     while True:
-        view_data = input("Would you like to view individual trip data (5 entries)? Type 'yes' or 'no'\n").lower()
+        view_data = input("Would you like to view individual trip data (five entries)? Type 'yes' or 'no'\n").lower()
         if view_data == 'yes':
             if i+5 > df.shape[0]:
                 print(df.iloc[i:df.shape[0]])
