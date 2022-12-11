@@ -13,6 +13,7 @@ def get_filters():
     Asks user to specify a city, month, and day to analyze.
 
     Returns:
+        str means String
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
@@ -96,7 +97,7 @@ def time_stats(df):
 
     months = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'july': 7, 'August': 8,
               'September': 9, 'october': 10, 'november': 11, 'december': 12}
-
+    # displays the calculating most frequent times of travel message
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
@@ -146,7 +147,7 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
-
+    # displaying the message of calculating trip duration
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -199,10 +200,10 @@ def user_stats(df):
 
 def display_data(df):
     """Displays raw bikeshare data."""
-    # Would you like to view individual trip data (5 entries)? Type 'yes' or 'no'\n"
+    # Would you like to view individual trip data (five entries)? Type 'yes' or 'no'\n"
     i = 0
     while True:
-        view_data = input("Would you like to view individual trip data (5 entries)? Type 'yes' or 'no'\n").lower()
+        view_data = input("Would you like to view individual trip data (five entries)? Type 'yes' or 'no'\n").lower()
         if view_data == 'yes':
             if i+5 > df.shape[0]:
                 print(df.iloc[i:df.shape[0]])
